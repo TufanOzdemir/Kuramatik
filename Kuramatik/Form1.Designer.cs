@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kuramatik));
             this.mainListbox = new System.Windows.Forms.ListBox();
             this.chooseListbox = new System.Windows.Forms.ListBox();
             this.RightMoveButton = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -62,22 +64,22 @@
             this.mainListbox.FormattingEnabled = true;
             this.mainListbox.Location = new System.Drawing.Point(13, 286);
             this.mainListbox.Name = "mainListbox";
-            this.mainListbox.Size = new System.Drawing.Size(358, 472);
+            this.mainListbox.Size = new System.Drawing.Size(491, 485);
             this.mainListbox.TabIndex = 0;
             // 
             // chooseListbox
             // 
             this.chooseListbox.FormattingEnabled = true;
-            this.chooseListbox.Location = new System.Drawing.Point(487, 283);
+            this.chooseListbox.Location = new System.Drawing.Point(770, 272);
             this.chooseListbox.Name = "chooseListbox";
-            this.chooseListbox.Size = new System.Drawing.Size(358, 472);
+            this.chooseListbox.Size = new System.Drawing.Size(482, 498);
             this.chooseListbox.TabIndex = 1;
             // 
             // RightMoveButton
             // 
-            this.RightMoveButton.Location = new System.Drawing.Point(377, 444);
+            this.RightMoveButton.Location = new System.Drawing.Point(509, 438);
             this.RightMoveButton.Name = "RightMoveButton";
-            this.RightMoveButton.Size = new System.Drawing.Size(104, 57);
+            this.RightMoveButton.Size = new System.Drawing.Size(255, 57);
             this.RightMoveButton.TabIndex = 2;
             this.RightMoveButton.Tag = "right";
             this.RightMoveButton.Text = ">>";
@@ -86,9 +88,9 @@
             // 
             // LeftMoveButton
             // 
-            this.LeftMoveButton.Location = new System.Drawing.Point(377, 507);
+            this.LeftMoveButton.Location = new System.Drawing.Point(509, 501);
             this.LeftMoveButton.Name = "LeftMoveButton";
-            this.LeftMoveButton.Size = new System.Drawing.Size(104, 57);
+            this.LeftMoveButton.Size = new System.Drawing.Size(255, 57);
             this.LeftMoveButton.TabIndex = 3;
             this.LeftMoveButton.Tag = "left";
             this.LeftMoveButton.Text = "<<";
@@ -109,7 +111,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(110, 11);
+            this.label2.Location = new System.Drawing.Point(177, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 24);
             this.label2.TabIndex = 5;
@@ -176,9 +178,9 @@
             this.panel2.Controls.Add(this.ResetButton);
             this.panel2.Controls.Add(this.choseListClearButton);
             this.panel2.Controls.Add(this.RandomChooseButton);
-            this.panel2.Location = new System.Drawing.Point(377, 23);
+            this.panel2.Location = new System.Drawing.Point(770, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(468, 205);
+            this.panel2.Size = new System.Drawing.Size(482, 205);
             this.panel2.TabIndex = 12;
             // 
             // button1
@@ -213,16 +215,16 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.valueTextBox);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(16, 23);
+            this.panel3.Location = new System.Drawing.Point(16, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(355, 205);
+            this.panel3.Size = new System.Drawing.Size(487, 216);
             this.panel3.TabIndex = 13;
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(61, 165);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(264, 22);
+            this.button3.Size = new System.Drawing.Size(401, 22);
             this.button3.TabIndex = 22;
             this.button3.Tag = "chooseItem";
             this.button3.Text = "Seçilen Listeden Eleman Sil";
@@ -233,7 +235,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(61, 134);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(264, 25);
+            this.button2.Size = new System.Drawing.Size(401, 25);
             this.button2.TabIndex = 21;
             this.button2.Tag = "mainItem";
             this.button2.Text = "Ana Listeden Eleman Sil";
@@ -244,7 +246,7 @@
             // 
             this.chosenListAddButton.Location = new System.Drawing.Point(61, 107);
             this.chosenListAddButton.Name = "chosenListAddButton";
-            this.chosenListAddButton.Size = new System.Drawing.Size(264, 21);
+            this.chosenListAddButton.Size = new System.Drawing.Size(401, 21);
             this.chosenListAddButton.TabIndex = 20;
             this.chosenListAddButton.Tag = "choose";
             this.chosenListAddButton.Text = "Seçilenler Listesine Ekle";
@@ -255,7 +257,7 @@
             // 
             this.mainListAddButton.Location = new System.Drawing.Point(61, 78);
             this.mainListAddButton.Name = "mainListAddButton";
-            this.mainListAddButton.Size = new System.Drawing.Size(264, 23);
+            this.mainListAddButton.Size = new System.Drawing.Size(401, 23);
             this.mainListAddButton.TabIndex = 19;
             this.mainListAddButton.Tag = "main";
             this.mainListAddButton.Text = "Ana Listeye Ekle";
@@ -276,7 +278,7 @@
             // 
             this.valueTextBox.Location = new System.Drawing.Point(61, 52);
             this.valueTextBox.Name = "valueTextBox";
-            this.valueTextBox.Size = new System.Drawing.Size(264, 20);
+            this.valueTextBox.Size = new System.Drawing.Size(401, 20);
             this.valueTextBox.TabIndex = 17;
             // 
             // label5
@@ -285,7 +287,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(108, 15);
+            this.label5.Location = new System.Drawing.Point(155, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 25);
             this.label5.TabIndex = 16;
@@ -296,9 +298,9 @@
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(487, 234);
+            this.panel4.Location = new System.Drawing.Point(770, 223);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(358, 46);
+            this.panel4.Size = new System.Drawing.Size(482, 46);
             this.panel4.TabIndex = 14;
             // 
             // panel5
@@ -308,14 +310,26 @@
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(12, 234);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(358, 46);
+            this.panel5.Size = new System.Drawing.Size(491, 46);
             this.panel5.TabIndex = 15;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(509, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 420);
+            this.panel1.TabIndex = 16;
             // 
             // Kuramatik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 769);
+            this.ClientSize = new System.Drawing.Size(1264, 773);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -324,6 +338,7 @@
             this.Controls.Add(this.RightMoveButton);
             this.Controls.Add(this.chooseListbox);
             this.Controls.Add(this.mainListbox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Kuramatik";
             this.Text = "Kuramatik";
             this.panel2.ResumeLayout(false);
@@ -363,6 +378,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
