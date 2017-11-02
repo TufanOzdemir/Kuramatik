@@ -61,15 +61,19 @@
             // 
             // mainListbox
             // 
+            this.mainListbox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainListbox.FormattingEnabled = true;
+            this.mainListbox.ItemHeight = 19;
             this.mainListbox.Location = new System.Drawing.Point(13, 286);
             this.mainListbox.Name = "mainListbox";
-            this.mainListbox.Size = new System.Drawing.Size(491, 485);
+            this.mainListbox.Size = new System.Drawing.Size(491, 479);
             this.mainListbox.TabIndex = 0;
             // 
             // chooseListbox
             // 
+            this.chooseListbox.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseListbox.FormattingEnabled = true;
+            this.chooseListbox.ItemHeight = 19;
             this.chooseListbox.Location = new System.Drawing.Point(770, 272);
             this.chooseListbox.Name = "chooseListbox";
             this.chooseListbox.Size = new System.Drawing.Size(482, 498);
