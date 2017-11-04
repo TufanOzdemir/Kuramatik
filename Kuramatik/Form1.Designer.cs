@@ -226,9 +226,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(61, 165);
+            this.button3.Location = new System.Drawing.Point(61, 178);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(401, 22);
+            this.button3.Size = new System.Drawing.Size(401, 26);
             this.button3.TabIndex = 22;
             this.button3.Tag = "chooseItem";
             this.button3.Text = "Seçilen Listeden Eleman Sil";
@@ -237,9 +237,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(61, 134);
+            this.button2.Location = new System.Drawing.Point(61, 146);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(401, 25);
+            this.button2.Size = new System.Drawing.Size(401, 28);
             this.button2.TabIndex = 21;
             this.button2.Tag = "mainItem";
             this.button2.Text = "Ana Listeden Eleman Sil";
@@ -248,9 +248,9 @@
             // 
             // chosenListAddButton
             // 
-            this.chosenListAddButton.Location = new System.Drawing.Point(61, 107);
+            this.chosenListAddButton.Location = new System.Drawing.Point(61, 115);
             this.chosenListAddButton.Name = "chosenListAddButton";
-            this.chosenListAddButton.Size = new System.Drawing.Size(401, 21);
+            this.chosenListAddButton.Size = new System.Drawing.Size(401, 25);
             this.chosenListAddButton.TabIndex = 20;
             this.chosenListAddButton.Tag = "choose";
             this.chosenListAddButton.Text = "Seçilenler Listesine Ekle";
@@ -261,7 +261,7 @@
             // 
             this.mainListAddButton.Location = new System.Drawing.Point(61, 78);
             this.mainListAddButton.Name = "mainListAddButton";
-            this.mainListAddButton.Size = new System.Drawing.Size(401, 23);
+            this.mainListAddButton.Size = new System.Drawing.Size(401, 31);
             this.mainListAddButton.TabIndex = 19;
             this.mainListAddButton.Tag = "main";
             this.mainListAddButton.Text = "Ana Listeye Ekle";
